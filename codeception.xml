@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.3.xsd" name="codeception" invoke="$ProjectFileDir$\bin\codecept.bat" alias="cc" enabled="true" version="2">
+  <command>
+    <name>help</name>
+    <help><![CDATA[The <info>help</info> command displays help for a given command:<br/> <br/> <info>php bin\codecept help list</info><br/> <br/> You can also output the help in other formats by using the <comment>--format</comment> option:<br/> <br/> <info>php bin\codecept help --format=xml list</info><br/> <br/> To display the list of available commands, please use the <info>list</info> command.]]></help>
+    <params>command_name[=null]</params>
+  </command>
+  <command>
+    <name>list</name>
+    <help><![CDATA[The <info>list</info> command lists all commands:<br/> <br/> <info>php D:\www\skills-assessment\vendor\codeception\codeception\codecept list</info><br/> <br/> You can also display the commands for a specific namespace:<br/> <br/> <info>php D:\www\skills-assessment\app\console list test</info><br/> <br/> You can also output the information in other formats by using the <comment>--format</comment> option:<br/> <br/> <info>php D:\www\skills-assessment\app\console list --format=xml</info><br/> <br/> It's also possible to get raw list of commands (useful for embedding command runner):<br/> <br/> <info>php D:\www\skills-assessment\app\console list --raw</info>]]></help>
+    <params>namespace[=null]</params>
+  </command>
+  <command>
+    <name>analyze</name>
+    <help><![CDATA[Analyzes for non-existent methods and adds them to corresponding helper.]]></help>
+    <params>suite[=null]</params>
+  </command>
+  <command>
+    <name>bootstrap</name>
+    <help><![CDATA[Initializes empty test suite and default configuration file.<br/><br/> <table cellspacing="0" cellpading="0" border="0"> <tr><td colspan="2"><strong>Usage:</strong></td></tr> <tr><td colspan="2"><info>bootstrap [-ns|--namespace[="..."]] [path]</info></td></tr> <tr><td colspan="2"><strong>Arguments:</strong></td></tr> <tr><td>path</td><td>Custom installation path (default: ".")</td></tr> <tr><td colspan="2"><strong>Options:</strong></td></tr> <tr><td>--silent</td><td>Don't ask for rebuild</td></tr> <tr><td>--config (-c)</td><td>Use custom path for config</td></tr> <tr><td>--help (-h)</td><td>Display this help message.</td></tr> <tr><td>--quiet (-q)</td><td>Do not output any message.</td></tr> <tr><td>--verbose (-v|vv|vvv)</td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug<td></td></tr> <tr><td>--version (-V)</td>Display this application version.<td></td></tr> <tr><td>--ansi</td><td>Force ANSI output.</td></tr> <tr><td>--no-ansi</td><td>Disable ANSI output.</td></tr> <tr><td>--no-interaction (-n)</td><td>Do not ask any interactive question.</td></tr> </table>]]></help>
+    <params>path[=null]</params>
+  </command>
+  <command>
+    <name>build</name>
+    <help><![CDATA[Generates base classes for all suites.<br/><br/> <table cellspacing="0" cellpading="0" border="0"> <tr><td colspan="2"><strong>Usage:</strong></td></tr> <tr><td colspan="2"><info>build [--silent] [-c|--config[="..."]]</info></td></tr> <tr><td colspan="2"><strong>Options:</strong></td></tr> <tr><td>--silent</td><td>Don't ask for rebuild</td></tr> <tr><td>--config (-c)</td><td>Use custom path for config</td></tr> <tr><td>--help (-h)</td><td>Display this help message.</td></tr> <tr><td>--quiet (-q)</td><td>Do not output any message.</td></tr> <tr><td>--verbose (-v|vv|vvv)</td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug<td></td></tr> <tr><td>--version (-V)</td>Display this application version.<td></td></tr> <tr><td>--ansi</td><td>Force ANSI output.</td></tr> <tr><td>--no-ansi</td><td>Disable ANSI output.</td></tr> <tr><td>--no-interaction (-n)</td><td>Do not ask any interactive question.</td></tr> </table>]]></help>
+  </command>
+  <command>
+    <name>console</name>
+    <help><![CDATA[Launches interactive test console]]></help>
+  </command>
+  <command>
+    <name>run</name>
+    <help><![CDATA[Runs the test suites]]></help>
+  </command>
+  <command>
+    <name>generate:cept</name>
+    <help><![CDATA[Generates empty Cept file in suite.<br/><br/> <table cellspacing="0" cellpading="0" border="0"> <tr><td colspan="2"><strong>Usage:</strong></td></tr> <tr><td colspan="2"><info>generate:cept [-c|--config[="..."]] suite test</info></td></tr> <tr><td colspan="2"><strong>Arguments:</strong></td></tr> <tr><td>suite</td><td>Suite to be generated</td></tr> <tr><td>test</td><td>Test to be run</td></tr> <tr><td colspan="2"><strong>Options:</strong></td></tr> <tr><td>--config (-c)</td><td>Use custom path for config</td></tr> <tr><td>--help (-h)</td><td>Display this help message.</td></tr> <tr><td>--quiet (-q)</td><td>Do not output any message.</td></tr> <tr><td>--verbose (-v|vv|vvv)</td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug<td></td></tr> <tr><td>--version (-V)</td>Display this application version.<td></td></tr> <tr><td>--ansi</td><td>Force ANSI output.</td></tr> <tr><td>--no-ansi</td><td>Disable ANSI output.</td></tr> <tr><td>--no-interaction (-n)</td><td>Do not ask any interactive question.</td></tr> </table>]]></help>
+    <params>suite test</params>
+  </command>
+  <command>
+    <name>generate:cest</name>
+    <help><![CDATA[Generates empty Cest file in suite]]></help>
+  </command>
+  <command>
+    <name>generate:phpunit</name>
+    <help><![CDATA[Generates empty PHPUnit test without Codeception additions]]></help>
+  </command>
+  <command>
+    <name>generate:scenarios</name>
+    <help><![CDATA[Generates text representation for all scenarios]]></help>
+  </command>
+  <command>
+    <name>generate:suite</name>
+    <help><![CDATA[Generates new test suite.<br/><br/> <table cellspacing="0" cellpading="0" border="0"> <tr><td colspan="2"><strong>Usage:</strong></td></tr> <tr><td colspan="2"><info>generate:suite [-c|--config[="..."]] suite guy</info></td></tr> <tr><td colspan="2"><strong>Arguments:</strong></td></tr> <tr><td>suite</td><td>Suite to be generated</td></tr> <tr><td>guy</td><td>Name of new Guy class</td></tr> <tr><td colspan="2"><strong>Options:</strong></td></tr> <tr><td>--silent</td><td>Don't ask for rebuild</td></tr> <tr><td>--config (-c)</td><td>Use custom path for config</td></tr> <tr><td>--help (-h)</td><td>Display this help message.</td></tr> <tr><td>--quiet (-q)</td><td>Do not output any message.</td></tr> <tr><td>--verbose (-v|vv|vvv)</td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug<td></td></tr> <tr><td>--version (-V)</td>Display this application version.<td></td></tr> <tr><td>--ansi</td><td>Force ANSI output.</td></tr> <tr><td>--no-ansi</td><td>Disable ANSI output.</td></tr> <tr><td>--no-interaction (-n)</td><td>Do not ask any interactive question.</td></tr> </table>]]></help>
+    <params>suite guy</params>
+  </command>
+  <command>
+    <name>generate:test</name>
+    <help><![CDATA[Generates empty unit test file in suite]]></help>
+  </command>
+  <command>
+    <name>refactor:add-namespace</name>
+    <help><![CDATA[Introduces namespace into the current configuration]]></help>
+  </command>
+  <help><![CDATA[Codeception]]></help>
+</framework>
+
