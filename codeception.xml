@@ -119,6 +119,84 @@
   <command>
     <name>run</name>
     <help><![CDATA[Runs the test suites]]></help>
+    <params>suite[=null] test[=null]</params>
+    <optionsBefore>
+      <option name="--config" shortcut="--c">
+        <help><![CDATA[Use custom path for config]]></help>
+      </option>
+      <option name="--report" shortcut="">
+        <help><![CDATA[Show output in compact style]]></help>
+      </option>
+      <option name="--html" shortcut="">
+        <help><![CDATA[Generate html with results]]></help>
+      </option>
+      <option name="--xml" shortcut="">
+        <help><![CDATA[Generate JUnit XML Log]]></help>
+      </option>
+      <option name="--tap" shortcut="">
+        <help><![CDATA[Generate Tap Log]]></help>
+      </option>
+      <option name="--json" shortcut="">
+        <help><![CDATA[Generate Json Log]]></help>
+      </option>
+      <option name="--colors" shortcut="">
+        <help><![CDATA[Use colors in output]]></help>
+      </option>
+      <option name="--no-colors" shortcut="">
+        <help><![CDATA[Force no colors in output (useful to override config file)]]></help>
+      </option>
+      <option name="--silent" shortcut="">
+        <help><![CDATA[Only outputs suite names and final results]]></help>
+      </option>
+      <option name="--steps" shortcut="">
+        <help><![CDATA[Show steps in output]]></help>
+      </option>
+      <option name="--debug" shortcut="-d">
+        <help><![CDATA[Show debug and scenario output]]></help>
+      </option>
+      <option name="--coverage" shortcut="">
+          <help><![CDATA[Run with code coverage]]></help>
+      </option>
+      <option name="--no-exit" shortcut="">
+          <help><![CDATA[Don't finish with exit code]]></help>
+      </option>
+      <option name="--defer-flush" shortcut="">
+          <help><![CDATA[Don't flush output during run]]></help>
+      </option>
+      <option name="--group" shortcut="-g">
+          <help><![CDATA[Groups of tests to be executed (multiple values allowed)]]></help>
+      </option>
+      <option name="--skip" shortcut="-s">
+          <help><![CDATA[Skip selected suites (multiple values allowed)]]></help>
+      </option>
+      <option name="--skip-group" shortcut="">
+          <help><![CDATA[Skip selected groups (multiple values allowed)]]></help>
+      </option>
+      <option name="--env" shortcut="">
+          <help><![CDATA[Run tests in selected environments. (multiple values allowed)]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+          <help><![CDATA[Display this help message.]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+          <help><![CDATA[Do not output any message.]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+          <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+          <help><![CDATA[Display this application version.]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+          <help><![CDATA[Force ANSI output.]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+          <help><![CDATA[Disable ANSI output.]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+          <help><![CDATA[Do not ask any interactive question.]]></help>
+      </option>
+    </optionsBefore>
   </command>
   <command>
     <name>generate:cept</name>
